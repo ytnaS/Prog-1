@@ -1,0 +1,52 @@
+//FL(a, h, j)
+//El vector pasas por referencia sin asterisco 
+//FL(int V[], int a, int, *b)
+
+// HACER COPIA DE VECTOR:
+// for(i=0; i<t; i++){
+// B[i] = A[i]i }
+// t = tamaño máximo del vector
+
+// A UN VECTOR SE LO PUEDE:
+// MODIFICAR:
+// (pasas el vector, la posición del elemento, y el valor a reemplazar)
+// AGREGAR UN VALOR:
+// (pasas el vector, el valor a agregar y el tamaño usado(por referencia)+1)
+// ELIMIMAR UN VALOR:
+// (pasas el vector, la posición del valor a eliminar, y el tamaño usado(por referencia)-1)
+// INSERTAR UN VALOR:
+// (pasas el vector, la posición y el elemento a insertar)
+// MOSTRAR:
+// (pasas el valor y el tamaño usado)
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+
+int V[10]= {3,5,2,9,6};
+int mostrar(int V[], int u){
+    int i;
+    for(i=0; i< u; i++){
+        printf("%i  ", V[i]);
+    }
+    printf("\n\n");
+}
+
+int agregar(int V[], int *u, int a){
+    V[*u] = a;
+    *u = *u+1;
+    }
+
+int eliminar(int V[], int *u, int e){
+    int i;
+    while(V[*u] != );
+}
+
+int main(){
+  int u = 5;
+  mostrar(V, u);
+  int a = 3;
+  agregar(V, &u, a);
+  mostrar(V, u);
+}
