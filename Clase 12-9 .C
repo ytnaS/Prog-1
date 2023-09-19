@@ -34,6 +34,7 @@ int mostrar(int M[][20], int fila, int columna){
             printf("%i\t", M[i][j]);
         }
     }
+    printf("\n");
 }
  int cargar_azar(int M[][20], int fila, int columna){
     int i, j;
@@ -55,13 +56,16 @@ int main(){
     int M[20][20];
     int CEUfila = 3;
     int CEUcolumna = 3;
-    mostrar(M, CEUfila, CEUcolumna);
     cargar_azar(M, CEUfila, CEUcolumna);
     mostrar(M, CEUfila, CEUcolumna);
-    
+    int i,j;
+    for(i=0;i<CEUfila;i++){
+        for(j=i;j<CEUcolumna; j++){
+            intercambia(M, i, j);
+        }
+        mostrar(M, CEUfila, CEUcolumna);
 
-
-
+    }
 }
 
 
